@@ -18,3 +18,10 @@ function deviceInfo() {
 
 	document.getElementById("deviceDetails").innerHTML = info;	
 }
+
+
+function interestsInfo() {
+	const interests = `<p>Sport</p> <p>Music</p>`;
+
+	document.getElementById('detail').innerHTML = interests;
+}

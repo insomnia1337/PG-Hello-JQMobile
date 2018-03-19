@@ -13,26 +13,57 @@
 		<!-- My app main page -->
 		<div data-role="page" id="pageone">
 		  <div data-role="header">
-			<h1>Hello World!</h1>
+			<h1>GUI</h1>
 		  </div>
 		  <div data-role="main" class="ui-content">
-			<p>Hi, I'm your mobile device</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="deviceInfo()">Let me introduce myself!</a>
+			<p>Name: Mateusz Bieda</p>
+			<p>Email adress: mateusz.bieda95@gmail.com</p>
+			<p>Field of study: Applied Computer Science</p>
+
+			<a href="#interests" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" onclick="interestsInfo()">Interests</a>
+
+			<p><a href="#two" class="ui-btn ui-shadow ui-corner-all">Display info about me</a></p>
 		  </div>
 		  <div data-role="footer" data-position="fixed">
-			<h1>(c) John Brown</h1>
+			<h1>(c) Mateusz Bieda</h1>
 		  </div> 
 		</div> 
 		
 		<!-- Mobile device details page -->
-		<div data-role="page" id="details" data-dialog="true">
+		<div data-role="page" id="interests" data-dialog="true">
 			<div data-role="header" data-theme="a">
 				<h1>It's me</h1>
 			</div>
 			<div role="main" class="ui-content">
-				<p id="deviceDetails">Place for device details ...</p>
+				<p id="detail">Place for device details ...</p>
 			</div>
-		</div>		
+		</div>
+
+
+
+		<!-- second page -->
+
+		<div data-role="page" id="two" data-theme="a">
+
+			<div data-role="header">
+					<a href="#pageone" data-direction="reverse" data-icon="back" data-iconpos="notext">Back</a>
+				<h1>Second page</h1>
+			</div><!-- /header -->
+		
+			<div role="main" class="ui-content">
+				<h2>3 rzeczy o mnie</h2>
+				<p>Lubie sport.</p>
+				<p>Tylko Barcelona.</p>
+				<p>Najlepszy React.js!</p>
+				
+		
+			</div><!-- /content -->
+		
+			<div data-role="footer" data-position="fixed">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div><!-- /page two -->
+				
 		
 	</body>
 </html>
